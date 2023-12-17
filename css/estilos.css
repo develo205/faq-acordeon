@@ -1,0 +1,169 @@
+@font-face {
+    font-family: WorkSnas;
+    src: url("/fonts/WorkSans-Italic-VariableFont_wght.ttf") format("ttf"),
+    url("/fonts/WorkSans-VariableFont_wght.ttf") format("ttf");
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "WorkSnas";
+}
+
+html {
+    height: 100%;
+    max-height: 100%;
+    background-color: #FAEEFF;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+div.contenedor-padre {
+    /* por si se agregan estilos en el futuro */
+}
+
+div.fondo {
+    /* por si se agregan estilos en el futuro */
+}
+
+div.imagen-cabecero {
+    position: relative;
+    z-index: 1;
+}
+
+div.centro {
+    padding: 1%;
+    margin: -100px auto;
+    position: relative;
+    z-index: 2;
+    max-width: 35%;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid #EDE6F5;
+}
+
+div.contenedor-h1 {
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+div.titulo-h1 {
+    margin-left: 15px;
+}
+
+h1.titulo {
+    font-size: 40px;
+}
+
+div.titulo-h4 {
+    margin: 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h4.h4{
+    font-size: 15px;
+}
+
+div.texto {
+    margin: 10px 0px 20px;
+}
+
+div.mas {
+    margin: 5px 0px;
+}
+
+div.free {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+div.contenidos {
+    flex: 1;   
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+/* Nuevos estilos para las preguntas frecuentes (FAQ) */
+.texto {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.mostrar-texto {
+    max-height: 500px; /* Ajusta según sea necesario para mostrar todo el texto */
+}
+
+.activa {
+    background-color: #f0f0f0; /* Ajusta según tu diseño */
+}
+
+/* Estilos generales */
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    max-height: 100%;
+    background-color: #FAEEFF;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/*  Estilos para pantallas grandes (mayores a 600px) 
+
+@media screen and (min-width: 600px) {
+    div.centro {
+        max-width: 35%;
+    }
+} */ 
+
+/* Estilos para pantallas pequeñas (600px o menos) */
+@media screen and (max-width: 600px) {
+    div.centro {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    div.titulo-h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    h1.titulo {
+        font-size: 30px;
+    }
+    
+    div.titulo-h4 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h4.h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    div.texto {
+        margin: 10px 0px 10px;
+    }
+
+    div.imagen-mas {
+        margin-left: 10px;
+    }
+}
